@@ -1,0 +1,6 @@
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\bin\Debug\Logs.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\bin\Debug\Logs.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Debug\Logs.csprojAssemblyReference.cache
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Debug\Logs.csproj.CoreCompileInputs.cache
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Debug\Logs.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Debug\Logs.pdb

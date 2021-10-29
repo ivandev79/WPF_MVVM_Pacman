@@ -1,0 +1,77 @@
+﻿<Window x:Class="Pacman.Views.DieRestartWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pacman.Views"
+        mc:Ignorable="d"
+        Icon="../Materials/Icons/dead.png"
+        MinHeight="250" MinWidth="500"
+        MaxWidth="500"  MaxHeight="250" 
+        WindowStartupLocation="CenterScreen"
+        Title="You are dead" Height="250" Width="500">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#373737" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="Margin" Value="20"/>
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="12" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkSlateBlue" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="OrangeRed" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="White" Offset="0"></GradientStop>
+                <GradientStop Color="Orange" Offset="1"></GradientStop>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <StackPanel Margin="20">
+            <TextBlock HorizontalAlignment="Center" FontSize="20" FontWeight="Bold">Congratulations</TextBlock>
+            <TextBlock HorizontalAlignment="Center" FontSize="14">You are have reached <TextBlock Name="Points" FontWeight="Bold"  FontSize="16"> </TextBlock> points </TextBlock>
+            <StackPanel Orientation="Horizontal" Margin="20" HorizontalAlignment="Center">
+                <Button Click="RestartClick">
+                    <Button.Content>
+                        <StackPanel>
+                            <TextBlock Text="Restart" FontSize="25" Padding="10 10 10 2"/>
+                            <TextBlock Text="Play again" FontSize="12" Foreground="Gainsboro" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content> 
+                </Button>
+                <Button Click="MenuClick">
+                    <Button.Content>
+                        <StackPanel>
+                            <TextBlock Text="Main menu" FontSize="25" Padding="10 10 10 2"/>
+                            <TextBlock Text="Exit to main menu" FontSize="12" Foreground="Gainsboro" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </Button.Content> 
+                </Button>
+            </StackPanel>
+         
+        </StackPanel>
+    </Grid>
+</Window>

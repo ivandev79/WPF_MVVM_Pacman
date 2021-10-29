@@ -1,0 +1,5 @@
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\bin\Release\Logs.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\bin\Release\Logs.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Release\Logs.csproj.CoreCompileInputs.cache
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Release\Logs.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\Logs\obj\Release\Logs.pdb

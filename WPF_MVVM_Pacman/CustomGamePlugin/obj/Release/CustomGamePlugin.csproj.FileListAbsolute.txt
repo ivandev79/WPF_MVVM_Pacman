@@ -1,0 +1,17 @@
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\CustomGamePlugin.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\CustomGamePlugin.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Core.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Prism.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Logs.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\System.ValueTuple.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Core.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Core.dll.config
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Prism.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Prism.xml
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\Logs.pdb
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\bin\Release\System.ValueTuple.xml
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\obj\Release\CustomGamePlugin.csprojAssemblyReference.cache
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\obj\Release\CustomGamePlugin.csproj.CoreCompileInputs.cache
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\obj\Release\CustomGamePlugin.csproj.CopyComplete
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\obj\Release\CustomGamePlugin.dll
+E:\яЯя\ВСЕ\Задание\Pacman_root\Pacman\CustomGamePlugin\obj\Release\CustomGamePlugin.pdb

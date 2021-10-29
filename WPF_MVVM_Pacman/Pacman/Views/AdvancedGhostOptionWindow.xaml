@@ -1,0 +1,113 @@
+﻿<Window x:Class="Pacman.Views.AdvancedGhostOptionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pacman.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Icon="../Materials/Icons/Options.png"
+        ResizeMode="NoResize"
+        Closing="Window_Closing"
+        Title="Advanced Ghost Option" Height="250" Width="550">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="#373737" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="Margin" Value="20 0 20 5"/>
+            <Setter Property="SnapsToDevicePixels" Value="True" />
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border CornerRadius="40" Background="{TemplateBinding Background}">
+                            <Grid>
+                                <ContentPresenter x:Name="MyContentPresenter" Content="{TemplateBinding Content}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0" />
+                            </Grid>
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="DarkSlateBlue" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Background" Value="OrangeRed" />
+                                <Setter Property="Foreground" Value="White" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush>
+                <GradientStop Color="#31002C" Offset=".3"></GradientStop>
+                <GradientStop Color="DarkRed" Offset="0.6"></GradientStop>
+                <GradientStop Color="Black" Offset="1"></GradientStop>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <DockPanel LastChildFill="True">
+            <CheckBox DockPanel.Dock="Top" Foreground="White" FontSize="20" FontWeight="Bold" VerticalAlignment="Center" Margin=" 20 3" Checked="CheckBox_Checked" Unchecked="CheckBox_Unchecked"> Use advanced configuration</CheckBox>
+            <Button IsCancel="True" DockPanel.Dock="Bottom">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock Text="OK" FontSize="20" Padding="10 0 10 2" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button DockPanel.Dock="Bottom">
+                <Button.Content>
+                    <StackPanel>
+                        <TextBlock Text="You can set ghost count from 1 to 9" FontSize="12" Padding="5" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <StackPanel Name="paramsPanel" Orientation="Horizontal" HorizontalAlignment="Stretch" IsEnabled="False">
+                <StackPanel Margin="10">
+                    <TextBlock Foreground="White">Green Ghost</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White" Margin="5">Count</TextBlock>
+                        <TextBox Name="GreenCountTextBox" MaxWidth="20" MinWidth="20" MaxHeight="20" PreviewKeyDown="PreviewKeyDown" MaxLength="1">2</TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White"  Margin="5">Speed</TextBlock>
+                        <ComboBox Name="GreenSpeedComboBox" ItemsSource="{Binding Path=Speeds}" Margin="5">
+                        </ComboBox>
+                    </StackPanel>
+                    
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Foreground="White">Blue Ghost</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White" Margin="5">Count</TextBlock>
+                        <TextBox Name="BlueCountTextBox" MaxWidth="20" MinWidth="20" MaxHeight="20" PreviewKeyDown="PreviewKeyDown" MaxLength="1">1</TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White"  Margin="5">Speed</TextBlock>
+                        <ComboBox Name="BlueSpeedComboBox" ItemsSource="{Binding Path=Speeds}" Margin="5">
+                        </ComboBox>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Margin="10">
+                    <TextBlock Foreground="White">Red Ghost</TextBlock>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White" Margin="5">Count</TextBlock>
+                        <TextBox Name="RedCountTextBox" MaxWidth="20" MinWidth="20" MaxHeight="20" PreviewKeyDown="PreviewKeyDown" MaxLength="1">1</TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Foreground="White"  Margin="5">Speed</TextBlock>
+                        <ComboBox Name="RedSpeedComboBox" ItemsSource="{Binding Path=Speeds}" Margin="5">
+                        </ComboBox>
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <!-- For more information on Entity Framework configuration, visit http://go.microsoft.com/fwlink/?LinkID=237468 -->
+    <section name="entityFramework" type="System.Data.Entity.Internal.ConfigFile.EntityFrameworkSection, EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" requirePermission="false" />
+  </configSections>
+  <configProtectedData defaultProvider="RsaProtectedConfigurationProvider">
+    <providers>
+      <clear />
+      <add description="Uses RsaCryptoServiceProvider to encrypt and decrypt"
+        keyContainerName="NetFrameworkConfigurationKey" cspProviderName=""
+        useMachineContainer="true" useOAEP="false" name="RsaProtectedConfigurationProvider"
+        type="System.Configuration.RsaProtectedConfigurationProvider,System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+      <add description="Uses CryptProtectData and CryptUnProtectData Windows APIs to encrypt and decrypt"
+        useMachineProtection="true" keyEntropy="" name="DataProtectionConfigurationProvider"
+        type="System.Configuration.DpapiProtectedConfigurationProvider,System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    </providers>
+  </configProtectedData>
+  <system.diagnostics>
+    <assert assertuienabled="true" logfilename="" />
+    <performanceCounters filemappingsize="524288" />
+    <switches>
+      <clear />
+    </switches>
+    <trace autoflush="false" indentsize="4" useGlobalLock="true">
+      <listeners>
+        <clear />
+        <add initializeData="" type="System.Diagnostics.DefaultTraceListener"
+          name="Default" traceOutputOptions="None">
+          <filter type="" initializeData="" />
+        </add>
+      </listeners>
+    </trace>
+  </system.diagnostics>
+  <system.windows.forms jitDebugging="false" />
+  <System.Windows.Forms.ApplicationConfigurationSection file="">
+    <clear />
+  </System.Windows.Forms.ApplicationConfigurationSection>
+  <uri>
+    <idn enabled="None" />
+    <iriParsing enabled="false" />
+    <schemeSettings>
+      <clear />
+    </schemeSettings>
+  </uri>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.6.1" />
+  </startup>
+  <appSettings file="">
+    <clear />
+    <add key="AI_behavior" value="default" />
+    <add key="PlayerName" value="zxxxxxxxx" />
+    <add key="Map_Blocks" value="10" />
+    <add key="Map_Size" value="10" />
+  </appSettings>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading.Tasks.Extensions" publicKeyToken="cc7b13ffcd2ddd51"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.1" newVersion="4.2.0.1" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.DependencyInjection.Abstractions"
+          publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.CompilerServices.Unsafe"
+          publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.6.0" newVersion="4.0.6.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Memory" publicKeyToken="cc7b13ffcd2ddd51"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.1" newVersion="4.0.1.1" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Primitives" publicKeyToken="adb9793829ddae60"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Configuration.Abstractions"
+          publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Caching.Abstractions"
+          publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Options" publicKeyToken="adb9793829ddae60"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.Logging.Abstractions"
+          publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Microsoft.Extensions.DependencyInjection"
+          publicKeyToken="adb9793829ddae60" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-3.1.5.0" newVersion="3.1.5.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.ComponentModel.Annotations" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.1.0" newVersion="4.2.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.ValueTuple" publicKeyToken="cc7b13ffcd2ddd51"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.3.0" newVersion="4.0.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Collections.Concurrent" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Collections" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.ComponentModel" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.ComponentModel.EventBasedAsync"
+          publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Data.Common" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.Contracts" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.Debug" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.StackTrace" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.0.0" newVersion="4.1.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.Tools" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Diagnostics.Tracing" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Dynamic.Runtime" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Globalization" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Globalization.Extensions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.0.0" newVersion="4.1.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.IO.Compression" publicKeyToken="b77a5c561934e089"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.IO" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Linq" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Linq.Expressions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Linq.Parallel" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Linq.Queryable" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Http" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.NetworkInformation" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Primitives" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Requests" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Net.Sockets" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.ObjectModel" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Reflection" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Reflection.Extensions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Reflection.Primitives" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Resources.ResourceManager" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.Extensions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.InteropServices" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.2.0" newVersion="4.1.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.InteropServices.RuntimeInformation"
+          publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.2.0" newVersion="4.0.2.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.Numerics" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.Serialization.Json" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.Serialization.Primitives"
+          publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.2.0.0" newVersion="4.2.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Runtime.Serialization.Xml" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.3.0" newVersion="4.1.3.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Security.Cryptography.Algorithms"
+          publicKeyToken="b03f5f7f11d50a3a" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.3.0.0" newVersion="4.3.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Security.Principal" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Security.SecureString" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.0.0" newVersion="4.1.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Text.Encoding" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Text.Encoding.Extensions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Text.RegularExpressions" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.1.0" newVersion="4.1.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading.Overlapped" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.0.0" newVersion="4.1.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading.Tasks" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading.Tasks.Parallel" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Threading.Timer" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.1.0" newVersion="4.0.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Xml.ReaderWriter" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.1.0" newVersion="4.1.1.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Xml.XDocument" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Xml.XmlSerializer" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.0.11.0" newVersion="4.0.11.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="System.Xml.XPath.XDocument" publicKeyToken="b03f5f7f11d50a3a"
+          culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.1.0.0" newVersion="4.1.0.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <entityFramework codeConfigurationType="">
+    <defaultConnectionFactory type="" />
+    <providers>
+      <provider invariantName="System.Data.SqlClient" type="System.Data.Entity.SqlServer.SqlProviderServices, EntityFramework.SqlServer" />
+    </providers>
+    <queryCache size="0" cleaningIntervalInSeconds="0" />
+  </entityFramework>
+  <connectionStrings>
+    <clear />
+    <add name="LocalSqlServer" connectionString="data source=.\SQLEXPRESS;Integrated Security=SSPI;AttachDBFilename=|DataDirectory|aspnetdb.mdf;User Instance=true"
+      providerName="System.Data.SqlClient" />
+    <add name="UserScoreEntities" connectionString="metadata=res://*/UserScore.csdl|res://*/UserScore.ssdl|res://*/UserScore.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=localhost;initial catalog=UserScore;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework&quot;"
+      providerName="System.Data.EntityClient" />
+  </connectionStrings>
+  <system.net>
+    <authenticationModules>
+      <clear />
+      <add type="System.Net.NegotiateClient, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add type="System.Net.KerberosClient, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add type="System.Net.NtlmClient, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add type="System.Net.DigestClient, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add type="System.Net.BasicClient, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    </authenticationModules>
+    <connectionManagement>
+      <clear />
+    </connectionManagement>
+    <defaultProxy enabled="true" useDefaultCredentials="false">
+      <bypasslist>
+        <clear />
+      </bypasslist>
+      <proxy autoDetect="Unspecified" bypassonlocal="Unspecified" usesystemdefault="Unspecified" />
+    </defaultProxy>
+    <requestCaching disableAllCaching="false" defaultPolicyLevel="BypassCache"
+      isPrivateCache="true" unspecifiedMaximumAge="1.00:00:00">
+      <defaultHttpCachePolicy maximumAge="10675199.02:48:05.4775807"
+        maximumStale="-10675199.02:48:05.4775808" minimumFresh="-10675199.02:48:05.4775808"
+        policyLevel="Default" />
+      <defaultFtpCachePolicy policyLevel="Default" />
+    </requestCaching>
+    <settings>
+      <httpWebRequest maximumResponseHeadersLength="64" maximumErrorResponseLength="64"
+        maximumUnauthorizedUploadLength="-1" useUnsafeHeaderParsing="false" />
+      <ipv6 enabled="false" />
+      <servicePointManager checkCertificateName="true" checkCertificateRevocationList="false"
+        dnsRefreshTimeout="120000" enableDnsRoundRobin="false" encryptionPolicy="RequireEncryption"
+        expect100Continue="true" useNagleAlgorithm="true" />
+      <socket alwaysUseCompletionPortsForAccept="false" alwaysUseCompletionPortsForConnect="false"
+        ipProtectionLevel="Unspecified" />
+      <webProxyScript autoConfigUrlRetryInterval="600" downloadTimeout="00:01:00" />
+      <performanceCounters enabled="false" />
+      <httpListener unescapeRequestUrl="true">
+        <timeouts entityBody="00:00:00" drainEntityBody="00:00:00" requestQueue="00:00:00"
+          idleConnection="00:00:00" headerWait="00:00:00" minSendBytesPerSecond="0" />
+      </httpListener>
+      <webUtility unicodeDecodingConformance="Auto" unicodeEncodingConformance="Auto" />
+      <windowsAuthentication defaultCredentialsHandleCacheSize="0" />
+    </settings>
+    <webRequestModules>
+      <clear />
+      <add prefix="https:" type="System.Net.HttpRequestCreator, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add prefix="http:" type="System.Net.HttpRequestCreator, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add prefix="file:" type="System.Net.FileWebRequestCreator, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+      <add prefix="ftp:" type="System.Net.FtpWebRequestCreator, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+    </webRequestModules>
+    <mailSettings>
+      <smtp deliveryMethod="Network" deliveryFormat="SevenBit">
+        <network defaultCredentials="false" port="25" enableSsl="false" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <system.runtime.caching>
+    <memoryCache>
+      <namedCaches>
+        <clear />
+      </namedCaches>
+    </memoryCache>
+  </system.runtime.caching>
+  <system.runtime.serialization>
+    <dataContractSerializer>
+      <declaredTypes>
+        <clear />
+      </declaredTypes>
+    </dataContractSerializer>
+  </system.runtime.serialization>
+  <system.serviceModel>
+    <behaviors>
+      <endpointBehaviors>
+        <clear />
+      </endpointBehaviors>
+      <serviceBehaviors>
+        <clear />
+      </serviceBehaviors>
+    </behaviors>
+    <bindings>
+      <basicHttpBinding>
+        <clear />
+      </basicHttpBinding>
+      <customBinding>
+        <clear />
+      </customBinding>
+      <msmqIntegrationBinding>
+        <clear />
+      </msmqIntegrationBinding>
+      <netMsmqBinding>
+        <clear />
+      </netMsmqBinding>
+      <netNamedPipeBinding>
+        <clear />
+      </netNamedPipeBinding>
+      <netPeerTcpBinding>
+        <clear />
+      </netPeerTcpBinding>
+      <netTcpBinding>
+        <clear />
+      </netTcpBinding>
+      <wsDualHttpBinding>
+        <clear />
+      </wsDualHttpBinding>
+      <wsFederationHttpBinding>
+        <clear />
+      </wsFederationHttpBinding>
+      <ws2007FederationHttpBinding>
+        <clear />
+      </ws2007FederationHttpBinding>
+      <wsHttpBinding>
+        <clear />
+      </wsHttpBinding>
+      <ws2007HttpBinding>
+        <clear />
+      </ws2007HttpBinding>
+      <mexHttpBinding>
+        <clear />
+      </mexHttpBinding>
+      <mexHttpsBinding>
+        <clear />
+      </mexHttpsBinding>
+      <mexNamedPipeBinding>
+        <clear />
+      </mexNamedPipeBinding>
+      <mexTcpBinding>
+        <clear />
+      </mexTcpBinding>
+      <udpBinding>
+        <clear />
+      </udpBinding>
+      <netHttpBinding>
+        <clear />
+      </netHttpBinding>
+      <netHttpsBinding>
+        <clear />
+      </netHttpsBinding>
+      <basicHttpsBinding>
+        <clear />
+      </basicHttpsBinding>
+      <wsHttpContextBinding>
+        <clear />
+      </wsHttpContextBinding>
+      <netTcpContextBinding>
+        <clear />
+      </netTcpContextBinding>
+      <webHttpBinding>
+        <clear />
+      </webHttpBinding>
+      <basicHttpContextBinding>
+        <clear />
+      </basicHttpContextBinding>
+    </bindings>
